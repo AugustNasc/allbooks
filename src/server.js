@@ -13,6 +13,7 @@ server.use(jsonServer.defaults());
 
 server.use('/public', publicRoutes) //rotas na porta 8000
 
+//novo conflito
 
 server.use(/^(?!\/(public|livros|autores|categorias)).*$/, authenticationMiddleware);
 
